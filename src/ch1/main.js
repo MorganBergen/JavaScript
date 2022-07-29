@@ -41,22 +41,45 @@ note that arrays are not primative data types unlike in C++
 */
 
 // an object is a collection of name/value pairs, or a string to value map
+
+
 let morgan = {
-    first: "Morgan",
-    middle: "Maha",
-    last: "Bergen",
+
+    name: [{
+        first: "Morgan",
+        middle: "Maha",
+        last: "Bergen",
+    }],
     species: "homo sapien",
-    age: 24,
-    sex: 'female',
-    education: "University of Kansas",
-    degree: "BS, Computer Science",
-    class_status: "Junior",
     birth_date: "March 24, 1998",
+
+    education: [
+        {
+            institution: "University of Kansas",
+            degree: "Bachelors of Science Computer Science",
+            year: "junior",
+            graduation_date: 2024
+        }
+    ],
+
+    desired_roles: [
+        "software engineer",
+        "iOS application enegineer",
+        "blockchain developer",
+        "data scientist",
+        "user interface designer"
+    ],
+
     hometown: "Wichita, Kansas USA",
     nationality: "American",
+    sex: 'female',
     race: "white & middle eastern",
     religion: "pantheism",
-    language: "english",
+    language: ["english", "عربى"]
+}
+
+
+let morgan_more = {
     economic_philosophy: "Libertarianism",
     political_philosophy: "Progressism",
     belief_system: "Pragm atic Optimism",
@@ -64,32 +87,56 @@ let morgan = {
     mother: "Mona Al-Abed Bergen",
     father: "David Bruce Bergen",
     brother: "David Khaled Bergen",
+    interests: [
+        "programming",
+        "Behavioral Economics",
+        "Blockchain Technologies",
+        "Game Theory",
+        "Data Structures",
+        "Emerging wearables",
+        "Residential Real-Estate Investing",
+        "Philosophy"
+    ]
 }
 
+let book = {
+    topic: "javascript",
+    edition: 7
+};
 
-// access the properties of the object morgan with a . operator or [] operator:
-console.log(morgan.first);
-
-
-
-
-
-
-
-
+/*
+you can access the properties of an object with a 
+. operator or [] operator
+*/
 
 
+if (book.topic === book["topic"]) {
+    console.log("both . and [] operators output the same value");
+    console.log(book.topic)
+    console.log(book["topic"])
+}
 
+// create a new property by assigning a value to it
+book.author = "Flanagan";
 
+// or create a new empty object with no properties in it
+book.contents = {};
+console.log(book);
 
+/*
+conditionally access properties with the ?
+*/
 
+console.log(book.author ? "author exists" : "author does not exist");
 
+book.contents = { ch01: "chapter 1 introduction to javascript", ch02: "chapter 2 lexical structure" };
 
+// this will output "undefined" because the property does not exist
+console.log(book.contents?.ch05);
 
+console.log(book.contents.ch01 ? "ch01 exists" : "ch01 does not exist")
 
+console.log(book.contents ? true : false);
 
-
-
-
-
+console.log(book.contents ? "conditional true space" : "this is a conditional false space");
 
