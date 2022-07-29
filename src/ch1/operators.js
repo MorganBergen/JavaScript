@@ -51,4 +51,37 @@ console.log("x === ", x);
 console.log("y === ", y);
 console.log("x === y is ", x === y);
 console.log("x !== y is ", x !== y);
-console.log("x < y is", x )
+console.log("x < y is", x < y);
+console.log("x > y is", x > y);
+console.log("x <= y is", x <= y);
+console.log("x >= y is", x >= y);
+console.log("x == y is", x == y);
+
+// false:  the two strings are not the same
+console.log("two === three is", "two" === "three");
+
+// true:  "tw" is alphabetically greater tahn "th"
+console.log("tw > th is", "tw" > "th");
+
+console.log("\n");
+
+// logical operators combine or invert boolean values
+
+// true and true === true
+console.log("(x === 1) && (y === 2)", (x === 1) && (y === 2));
+
+// false or false === false
+console.log("(x > 100) || (y > 200)", (x > 100) || (y > 200));
+
+// not false === true
+console.log("!(false) is ", !(false));
+
+/*
+an expression is something that computes a value, but doesnt change the state of the program
+a statement does not have a value, however they alter the state of the program
+variable declarations are statements
+assignments statements are statements
+control structures are statements
+examples of control structures: for, if, while, switch, etc loops
+*/
+
