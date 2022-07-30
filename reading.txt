@@ -1,29 +1,23 @@
-/*
-javascript supports object-oriented programming, however it is not a strict object-oriented language
-more detail can be found in chapter 9
-here is a simple example that demonstrates how to define a javascript class to represent a point
-*/
-
-//objects that are instances of this class have a single method
 
 
-class Point {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-    }
-    class_name() {
-        return ("Point");
-    }
-    distance() {
-        return (Math.sqrt(this.x * this.x + this.y * this.y));
-    }
-}
 
-// create a new object of type Point
-let p = new Point(1, 1);
-console.log("class name is ", p.class_name());
-console.log("distance of (", p.x, ", ", p.y, ") === ", p.distance());
+chapters
+
+ch 1 intro
+ch 2 lexical structure
+ch 3 types, values, and variables
+ch 4 expressions and operators
+ch 5 statements
+ch 6 objects
+ch 7 arrays
+ch 8 functions
+ch 9 classes
+ch 10 modules
+ch 11 javascript standard library
+ch 12 iterators and generators
+ch 13 asynchronous javascript
+ch 14 sever-side javascript with node.js
+ch 15 javascript tools and extensions
 
 /*
 we have only shown the basics of syntax and capabilities of javascript
