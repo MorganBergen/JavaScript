@@ -40,3 +40,17 @@ function sum(array) {
 }
 
 console.log(sum([1, 2, 3, 4, 5]));
+
+
+// while loops
+function factorial(n) {
+    let product = 1;
+    while (n > 1) {
+        product *= n;
+        n--;
+    }
+    return (product);
+}
+
+console.log("4! === ", factorial(4));
+
