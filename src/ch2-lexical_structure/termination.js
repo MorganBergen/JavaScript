@@ -51,3 +51,12 @@ return; true;
 
 // even though you probably meant this...
 return true;
+
+/*
+tldr:
+
+you must NOT insert a line break between return, break, or contune and the expression that follows those keywords
+if you do your code is likely to compile, however your program will give you unexpected results and be difficult to debug
+*/
+
+// ==> must be written on the same line as the statement
