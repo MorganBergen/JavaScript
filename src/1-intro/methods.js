@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // we can define our own methods using the "this keyword refers to the object that is calling the method"
 
 let points = [
