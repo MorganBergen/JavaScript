@@ -9,12 +9,12 @@
 
 1. Primitive data types
 
-- primatives data types
-- numbers
-- strings
-- boolean truth values
-- undefined
-- null
-- symbols
+> primatives data types
+> numbers
+> strings
+> boolean truth values
+> undefined
+> null
+> symbols
 
 2. Object data types
