@@ -78,42 +78,42 @@
 
 > Numbers are primary numeric type in javascript and represented by floating point numbers. All numbers can represent all integers between (-2^53) and (2^53 \* 1)
 
-- integer literals
+1.  integer literals
 
         0
         3
         100000
 
-- hexadecimal literals
+2.  hexadecimal literals
 
         0x0 // = 0
         0xff // = 255
         0xBADCAFE // = 195939070
 
-- binary literals
+3.  binary literals
 
         0b0 // = 0
         0b1010 // = 10
         0b10101 // = 21 (1* 16 + 0* 8 + 1* 4 + 0* 2 + 1\* 1)
 
-- octal literals
+4.  octal literals
 
         0o377 // = 255 (3* 64 + 7* 8 + 7* 4 + 7* 2 + 7\* 1)
 
-- floating points
+5.  floating points
 
         0.1 // = 0.1
         0.1e2 // = 1.0
         0.1e-2 // = 0.001
 
-- exponential notation is as follows:
+6.  exponential notation
 
           1.0e+2 // =  100.0
           [digits][.digits][(E|e)[(+|-)]digits]
 
-- separators
+7.  separators
 
-  > separators in numeric literals _ you can use underscores within numbers to separate digits _ separators are implemented by all major browsers and by Node.js
+> separators in numeric literals _ you can use underscores within numbers to separate digits _ separators are implemented by all major browsers and by Node.js
 
         let billion = 1_000_000_000;
         let bytes = 0x89_AB_CD_EF;   // =  0x89ABCDEF
@@ -121,7 +121,7 @@
 
 ### Arithmetic in Javascript
 
-- basic arithmetic
+1.  basic arithmetic
 
          +     // addition
          _      // subtraction
@@ -133,7 +133,7 @@
          ++     // increment
          --     // decrement
 
-- complex arithmetic
+2.  complex arithmetic
 
         Math.pow(2, 53) // =  9007199254740992: 2 to the power of 53
         Math.round(.6)    // =  1: round to the nearest integer
