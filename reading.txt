@@ -1,8 +1,8 @@
 chapters
 
-ch 1 intro
-ch 2 lexical structure
-ch 3 types, values, and variables
+/ ch 1 intro
+/ ch 2 lexical structure
+/ ch 3 types, values, and variables
 ch 4 expressions and operators
 ch 5 statements
 ch 6 objects
