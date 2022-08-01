@@ -15,8 +15,8 @@
 < -- > // decrement
 
 - complex arithmetic
-< Math.pow(2, 53) > // => 9007199254740992: 2 to the power of 53
-< Math.round(.6) > // =>
+Math.pow(2, 53) > // => 9007199254740992: 2 to the power of 53
+Math.round(.6)    // => 1: round to the nearest integer
 
 
 
