@@ -129,7 +129,7 @@ ss
 
 - basic arithmetic
 
-        < +     // addition
+         +     // addition
          _      // subtraction
          *      // multiplication
          **     // exponentiation
@@ -137,7 +137,7 @@ ss
          //     // integer division
          %      // modulus
          ++     // increment
-         --     // decrement >
+         --     // decrement
 
 - complex arithmetic
 
