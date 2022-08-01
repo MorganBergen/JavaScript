@@ -109,8 +109,7 @@
 - exponential notation is as follows:
 
           1.0e+2 // =  100.0
-
-  [digits][.digits][(E|e)[(+|-)]digits]
+          [digits][.digits][(E|e)[(+|-)]digits]
 
 - separators
 
