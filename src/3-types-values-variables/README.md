@@ -120,4 +120,19 @@
   < let bytes = 0x89_AB_CD_EF; > // => 0x89ABCDEF
   < let factions = 0.123_456_789; > // => 0.123456789
 
-#### Arithmetic in Javascript
+### Arithmetic in Javascript
+
+- basic arithmetic
+  < + > // addition
+  < - > // subtraction
+  < \* > // multiplication
+  < \*\* > // exponentiation
+  < / > // division
+  < // > // integer division
+  < % > // modulus
+  < ++ > // increment
+  < -- > // decrement
+
+- complex arithmetic
+  < Math.pow(2, 53) > // => 9007199254740992: 2 to the power of 53
+  < Math.round(.6) > // =>
