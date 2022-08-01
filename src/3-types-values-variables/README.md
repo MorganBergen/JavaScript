@@ -21,7 +21,7 @@
 
 2. object data types
 
-   > An object is a mutable data type and is a member of the type <object> is a collection of properties where each property has a name and a value, either a primative value, or another object.
+   > An object is a mutable data type and is a member of the type object is a collection of properties where each property has a name and a value, either a primative value, or another object.
 
    - global object types
    - ordinary object types
