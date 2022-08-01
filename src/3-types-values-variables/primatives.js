@@ -39,3 +39,13 @@ show();
 // to sort an array of numbers
 let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 a.sort();
+
+// constants
+const PI = 3.14159;
+
+
+// variable declaration
+let x;
+
+// old style variable declaration
+var y;

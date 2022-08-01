@@ -10,7 +10,7 @@
 
 1. primitive data types
 
-   > primitive types are immutable values
+   > primitive types are immutable values and everything but null & undefines have methods attached to them that can be invoked!
 
    - numbers
    - strings
@@ -21,10 +21,8 @@
 
 2. object data types
 
-   > An object is a mutable data type and is a member of the type object is a collection of properties where each property has a name and a value, either a primative value, or another object.
+   > An object is a mutable data type and is a member of the type object is a collection of properties where each property has a name and a value, either a primative value, or another object. There are global object types or ordinary object types.
 
-   - global object types
-   - ordinary object types
    - Arrays
    - Sets
    - Map
@@ -36,74 +34,73 @@
 
 3. Memory Management
 
-- the javascript interpreter performs automatic garbage collection for memory management
-- therefore the destruction & deallocation of objects or other values is done automatically
-- the interpreter will garbage collect when a porgram no longer has any way to refer to a variable.
-- the interpreter will then reclaim the RAM memory it was occupying
+   > javascript interpreter performs automatic garbage collection for memory management
 
-2. Object Orientation in JavaScript
+   - therefore the destruction & deallocation of objects or other values is done automatically
+   - the interpreter will garbage collect when a porgram no longer has any way to refer to a variable.
+   - and the interpreter will then reclaim the RAM memory it was occupying.
 
-- The best part of OOP is the fact that globally defined functions become a thing of the past.
+4. Object Orientation in JavaScript
+
+   > The best part of OOP is the fact that globally defined functions become a thing of the past.
+
 - Therefore you utilizes types that have defined methods for working with certain values.
 - For example to sort the elements of an array a for example we don't pass a to a sort function, instead we invoke the sort method of a...
 
         let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
         a.sort();
 
-- numbers, strings, booleans, and symbols have methods attached to them that can be invoked
-- object types are mutable
-- primitive types are immutable
 - strings can be thought of as static arrays of characters, theyre indexable, but not mutable
 - value conversions are mostly implicit, meaning implicit static caste conversions are done under the hood
 
-         ==
-
 - the equality operator performs type conversions
 
-         ===
+        ==
 
-- the strict equality operator does not do type conversions
+- strict equality operator does not do type conversions
 
-3. Constants and variables
+        ===
 
-- are names to refer to values in your program
-- constants are declared...
-  const variable = "data"
-- variables are declared...
-  let variable
-  var variable // older version of declaring variables in javascipt
-- javascript constants and variables are untyped: declarations do not specify what kind of value will be assigned in the future
+3. Constants and Variables
+
+> Are programmer dsefined names used to refer to certain values. Constants and varibale declarations are untyped meaning declarations do not specify what kind of value will be assigned in the future.
+
+- constants declaration
+
+        const name = "data";
+
+- variables are declared
+
+        let name; // new style
+        var name; // old style
 
 ### Numbers
 
-- numbers are primary numeric type in javascript and represented by floating point numbers
-- all numbers can represent all integers between (-2^53) and (2^53 \* 1)
+> Numbers are primary numeric type in javascript and represented by floating point numbers. All numbers can represent all integers between (-2^53) and (2^53 \* 1)
 
-- integer literals are represented by the number type and are in base 10
+- integer literals
 
         0
         3
         100000
 
-- hexadecimal literals are represented by the number type and are in base 16
+- hexadecimal literals
 
         0x0 // = 0
         0xff // = 255
         0xBADCAFE // = 195939070
 
-- binary literals are represented by the number type and are in base 2
+- binary literals
 
         0b0 // = 0
         0b1010 // = 10
         0b10101 // = 21 (1* 16 + 0* 8 + 1* 4 + 0* 2 + 1\* 1)
 
-- octal literals are represented by the number type and are in base 8
+- octal literals
 
         0o377 // = 255 (3* 64 + 7* 8 + 7* 4 + 7* 2 + 7\* 1)
 
-### floating point literals
-
-- floating points represent decimal numbers and use the traditional syntax for real numbers
+- floating points
 
         0.1 // = 0.1
         0.1e2 // = 1.0
@@ -111,14 +108,17 @@
 
 - exponential notation is as follows:
 
-        1.0e+2 // =  100.0
-        [digits][.digits][(E|e)[(+|-)]digits]
+          1.0e+2 // =  100.0
 
-- separators in numeric literals _ you can use underscores within numbers to separate digits _ separators are implemented by all major browsers and by Node.js
+  [digits][.digits][(E|e)[(+|-)]digits]
 
-                 let billion = 1_000_000_000;
-                 let bytes = 0x89_AB_CD_EF;   // =  0x89ABCDEF
-                 let factions = 0.123_456_789;   // =  0.123456789
+- separators
+
+  > separators in numeric literals _ you can use underscores within numbers to separate digits _ separators are implemented by all major browsers and by Node.js
+
+        let billion = 1_000_000_000;
+        let bytes = 0x89_AB_CD_EF;   // =  0x89ABCDEF
+        let factions = 0.123_456_789;   // =  0.123456789
 
 ### Arithmetic in Javascript
 
