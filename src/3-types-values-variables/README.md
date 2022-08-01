@@ -8,34 +8,34 @@
 
 ### data Types
 
-1.  primitive data types
+1. primitive data types
 
-    primitive types are immutable values
+   primitive types are immutable values
 
-    - numbers
-    - strings
-    - boolean truth values
-    - undefined
-    - null
-    - symbols
+   - numbers
+   - strings
+   - boolean truth values
+   - undefined
+   - null
+   - symbols
 
-2.  object data types
+2. object data types
 
-         An object is a mutable data type and is a member of the type <object> is a collection of properties where each property has a name and a value, either a primative value, or another object.
+   > An object is a mutable data type and is a member of the type <object> is a collection of properties where each property has a name and a value, either a primative value, or another object.
 
-    - global objects
-    - ordinary objects
-    - Array objects
-    - Set objects
-    - Map objects
-    - Typed arrays
-    - RegExp type
-    - Date type
-    - Error type
-    - Function Type
-    - Class type
+   - global objects
+   - ordinary objects
+   - Array objects
+   - Set objects
+   - Map objects
+   - Typed arrays
+   - RegExp type
+   - Date type
+   - Error type
+   - Function Type
+   - Class type
 
-3.  Memory Management
+3. Memory Management
 
 - the javascript interpreter performs automatic garbage collection for memory management
 - therefore the destruction & deallocation of objects or other values is done automatically
