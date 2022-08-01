@@ -9,3 +9,12 @@
 
 1. Primitive data types
 2. Object data types
+
+Primitive data types
+
+- primatives data types
+- numbers
+- strings
+- boolean truth values
+- undefined
+- null
