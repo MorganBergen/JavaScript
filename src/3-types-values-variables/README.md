@@ -6,49 +6,49 @@
 - supported data types is the most fundamental characteric of any programming language.
 - the way variables work is the second most fundamental characteric as well.
 
-### data Types
+### Data Types
 
-1. primitive data types
+1.  Primitive Data Types
 
-   > primitive types are immutable values and everything but null & undefines have methods attached to them that can be invoked!
+    > Primitive types are immutable values and everything but null & undefines have methods attached to them that can be invoked!
 
-   - numbers
-   - strings
-   - boolean truth values
-   - undefined
-   - null
-   - symbols
+    - numbers
+    - strings
+    - boolean truth values
+    - undefined
+    - null
+    - symbols
 
-2. object data types
+2.  Object Data Types
 
-   > An object is a mutable data type and is a member of the type object is a collection of properties where each property has a name and a value, either a primative value, or another object. There are global object types or ordinary object types.
+    > An object is a mutable data type and is a member of the type object is a collection of properties where each property has a name and a value, either a primative value, or another object. There are global object types or ordinary object types.
 
-   - Arrays
-   - Sets
-   - Map
-   - RegExp
-   - Date
-   - Error
-   - Function
-   - Class
+    - Arrays
+    - Sets
+    - Map
+    - RegExp
+    - Date
+    - Error
+    - Function
+    - Class
 
-3. Memory Management
+- Magic Methods
 
-   > javascript interpreter performs automatic garbage collection for memory management
+        let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        a.sort();
+         // to sort the elements of an array a for example we don't pass a to a sort function,
+         // instead we invoke the sort method of a...
 
-   - destruction & deallocation of objects or other values is done automatically
-   - garbage collection will be performed when a porgram no longer has any way to refer to a variabl and will then reclaim the RAM memory it was previously occupying.
+3.  Memory Management
 
-4. Object Orientation in JavaScript
+    > javascript interpreter performs automatic garbage collection for memory management
 
-   > The best part of OOP is the fact that globally defined functions become a thing of the past.
+    - destruction & deallocation of objects or other values is done automatically
+    - garbage collection will be performed when a porgram no longer has any way to refer to a variabl and will then reclaim the RAM memory it was previously occupying.
 
-   - Therefore you utilizes types that have defined methods for working with certain values.
+4.  Object Orientation in JavaScript
 
-   - For example to sort the elements of an array a for example we don't pass a to a sort function, instead we invoke the sort method of a...
-
-     let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-     a.sort();
+    > The best part of OOP is the fact that globally defined functions become a thing of the past...
 
 - equality operator
 
