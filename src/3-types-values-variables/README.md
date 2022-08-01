@@ -20,21 +20,19 @@
    - symbols
 
 2. object data types
+
    > An object is a mutable data type and is a member of the type <object> is a collection of properties where each property has a name and a value, either a primative value, or another object.
 
-object data types
-
-- global objects
-- ordinary objects
-- Array objects
-- Set objects
-- Map objects
-- Typed arrays
-- RegExp type
-- Date type
-- Error type
-- Function Type
-- Class type
+   - global object types
+   - ordinary object types
+   - Arrays
+   - Sets
+   - Map
+   - RegExp
+   - Date
+   - Error
+   - Function
+   - Class
 
 3. Memory Management
 
