@@ -36,30 +36,27 @@
 
    > javascript interpreter performs automatic garbage collection for memory management
 
-   - therefore the destruction & deallocation of objects or other values is done automatically
-   - the interpreter will garbage collect when a porgram no longer has any way to refer to a variable.
-   - and the interpreter will then reclaim the RAM memory it was occupying.
+   - destruction & deallocation of objects or other values is done automatically
+   - garbage collection will be performed when a porgram no longer has any way to refer to a variabl and will then reclaim the RAM memory it was previously occupying.
 
 4. Object Orientation in JavaScript
 
    > The best part of OOP is the fact that globally defined functions become a thing of the past.
 
-- Therefore you utilizes types that have defined methods for working with certain values.
-- For example to sort the elements of an array a for example we don't pass a to a sort function, instead we invoke the sort method of a...
+   - Therefore you utilizes types that have defined methods for working with certain values.
 
-        let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-        a.sort();
+   - For example to sort the elements of an array a for example we don't pass a to a sort function, instead we invoke the sort method of a...
 
-- strings can be thought of as static arrays of characters, theyre indexable, but not mutable
-- value conversions are mostly implicit, meaning implicit static caste conversions are done under the hood
+     let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+     a.sort();
 
-- the equality operator performs type conversions
+- equality operator
 
-        ==
+        == // performes implicit type conversion
 
-- strict equality operator does not do type conversions
+- strict equality
 
-        ===
+        === // does not perform type conversions
 
 ### Constants and Variables
 
@@ -113,11 +110,10 @@
 
 7.  separators
 
-> separators in numeric literals _ you can use underscores within numbers to separate digits _ separators are implemented by all major browsers and by Node.js
-
         let billion = 1_000_000_000;
         let bytes = 0x89_AB_CD_EF;   // =  0x89ABCDEF
         let factions = 0.123_456_789;   // =  0.123456789
+        // separators in numeric literals _ you can use underscores within numbers to separate digits _ separators are implemented by all major browsers and by Node.js
 
 ### Arithmetic in Javascript
 
