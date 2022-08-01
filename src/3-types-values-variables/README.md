@@ -61,15 +61,15 @@
 
         ===
 
-3. Constants and Variables
+### Constants and Variables
 
 > Are programmer dsefined names used to refer to certain values. Constants and varibale declarations are untyped meaning declarations do not specify what kind of value will be assigned in the future.
 
-- constants declaration
+1.  constants declaration
 
         const name = "data";
 
-- variables are declared
+2.  variables declaration
 
         let name; // new style
         var name; // old style
