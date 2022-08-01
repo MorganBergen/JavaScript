@@ -1,7 +1,7 @@
 # javaScript
 
+<p>
 The goal of this repo is to document my autodidactic learning of the JavaScript language definitely.
-
 ch 1 introduction
 ch 2 lexical structure
 ch 3 types, values, and variables
@@ -17,3 +17,4 @@ ch 12 iterators and generators
 ch 13 asynchronous javascript
 ch 14 sever-side javascript with node.js
 ch 15 javascript tools and extensions
+</p>
