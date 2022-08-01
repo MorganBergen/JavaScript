@@ -114,32 +114,32 @@ ss
   < 0.1e2 > // => 1.0
   < 0.1e-2 > // => 0.001
 
-* exponential notation is as follows:
-  < 1.0e+2 > // => 100.0
-  [digits][.digits][(E|e)[(+|-)]digits]
+- exponential notation is as follows:
+
+        < 1.0e+2 // => 100.0 >
+        < [digits][.digits][(E|e)[(+|-)]digits] >
 
 - separators in numeric literals _ you can use underscores within numbers to separate digits _ separators are implemented by all major browsers and by Node.js
-  < let billion = 1_000_000_000; >
-  < let bytes = 0x89_AB_CD_EF; > // => 0x89ABCDEF
-  < let factions = 0.123_456_789; > // => 0.123456789
+
+        < let billion = 1_000_000_000; >
+        < let bytes = 0x89_AB_CD_EF; > // => 0x89ABCDEF
+        < let factions = 0.123_456_789; > // => 0.123456789
 
 ### Arithmetic in Javascript
 
 - basic arithmetic
-  < + > // addition
-  < _ > // subtraction
-  < \* > // multiplication
-  < \* \* > // exponentiation
-  < / > // division
-  < // > // integer division
-  < % > // modulus
-  < ++ > // increment
-  < -_ > // decrement
+
+        < +  // addition >
+        < _  // subtraction >
+        < \*  // multiplication >
+        < \* \* > // exponentiation
+        < / > // division
+        < // > // integer division
+        < % > // modulus
+        < ++ > // increment
+        < -\_ > // decrement
 
 - complex arithmetic
 
-                < Math.pow(2, 53) // => 9007199254740992: 2 to the power of 53 >
-
-          < Math.round(.6) > // =>
-
-  d
+        < Math.pow(2, 53) // => 9007199254740992: 2 to the power of 53 >
+        < Math.round(.6) > // =>
