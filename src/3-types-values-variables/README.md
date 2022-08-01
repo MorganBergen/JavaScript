@@ -2,6 +2,8 @@
 
 ## overview
 
+ss
+
 - explaination of the fundamental details about how data is represented and manipulated in JavaScript
 - supported data types is the most fundamental characteric of any programming language.
 - the way variables work is the second most fundamental characteric as well.
@@ -83,7 +85,8 @@
 ### Numbers
 
 - numbers are primary numeric type in javascript and represented by floating point numbers
-- numbers can represent all integers between (-2^53) and (2^53 - 1)
+- numbers can represent all integers between (-2^53) and (2^53 \* 1)
+
   < 5 > is a numeric literal
 
 - integer literals are represented by the number type and are in base 10
@@ -99,10 +102,10 @@
 - binary literals are represented by the number type and are in base 2
   < 0b0 > // => 0
   < 0b1010 > // => 10
-  < 0b10101 > // => 21 (1*16 + 0*8 + 1*4 + 0*2 + 1\*1)
+  < 0b10101 > // => 21 (1* 16 + 0* 8 + 1* 4 + 0* 2 + 1\* 1)
 
 - octal literals are represented by the number type and are in base 8
-  < 0o377 > // => 255 (3*64 + 7*8 + 7*4 + 7*2 + 7\*1)
+  < 0o377 > // => 255 (3* 64 + 7* 8 + 7* 4 + 7* 2 + 7\* 1)
 
 ### floating point literals
 
@@ -111,11 +114,11 @@
   < 0.1e2 > // => 1.0
   < 0.1e-2 > // => 0.001
 
-- exponential notation is as follows:
+* exponential notation is as follows:
   < 1.0e+2 > // => 100.0
   [digits][.digits][(E|e)[(+|-)]digits]
 
-- separators in numeric literals - you can use underscores within numbers to separate digits - separators are implemented by all major browsers and by Node.js
+- separators in numeric literals _ you can use underscores within numbers to separate digits _ separators are implemented by all major browsers and by Node.js
   < let billion = 1_000_000_000; >
   < let bytes = 0x89_AB_CD_EF; > // => 0x89ABCDEF
   < let factions = 0.123_456_789; > // => 0.123456789
@@ -124,15 +127,17 @@
 
 - basic arithmetic
   < + > // addition
-  < - > // subtraction
+  < _ > // subtraction
   < \* > // multiplication
-  < \*\* > // exponentiation
+  < \* \* > // exponentiation
   < / > // division
   < // > // integer division
   < % > // modulus
   < ++ > // increment
-  < -- > // decrement
+  < -_ > // decrement
 
 - complex arithmetic
-  < Math.pow(2, 53) > // => 9007199254740992: 2 to the power of 53
+
+        < Math.pow(2, 53) // => 9007199254740992: 2 to the power of 53 >
+
   < Math.round(.6) > // =>
