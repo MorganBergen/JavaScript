@@ -192,3 +192,10 @@
         }
 
         show()
+
+### Strings
+
+> A string is an immutable ordered sequence of 16-bit values, each of whcih typically represents a unicode character.
+
+- the length of a string is a number of 16-bit values it contains
+- zero base indexing
