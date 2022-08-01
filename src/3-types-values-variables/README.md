@@ -87,7 +87,7 @@ ss
 - numbers are primary numeric type in javascript and represented by floating point numbers
 - numbers can represent all integers between (-2^53) and (2^53 \* 1)
 
-  < 5 > is a numeric literal
+        < 5 > is a numeric literal
 
 - integer literals are represented by the number type and are in base 10
   < 0 >
@@ -138,6 +138,8 @@ ss
 
 - complex arithmetic
 
-        < Math.pow(2, 53) // => 9007199254740992: 2 to the power of 53 >
+                < Math.pow(2, 53) // => 9007199254740992: 2 to the power of 53 >
 
-  < Math.round(.6) > // =>
+          < Math.round(.6) > // =>
+
+  d
