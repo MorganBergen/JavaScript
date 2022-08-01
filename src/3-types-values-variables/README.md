@@ -9,6 +9,7 @@
 ### data Types
 
 1. primitive data types
+
    primitive types are immutable values
 
    - numbers
@@ -20,7 +21,7 @@
 
 2. object data types
 
-   An object is a member of the type object is a collection of properties where each property has a name and a value, either a primative value, or another object.
+   An object is a mutable data type and is a member of the type <object> is a collection of properties where each property has a name and a value, either a primative value, or another object.
 
    - global objects
    - ordinary objects
@@ -34,13 +35,6 @@
    - Function Type
    - Class type
 
-   - set objects represent a set of values
-   - map objects represents a mapping from keys to values
-   - RegExp is a new type of object in javascipt and is a regular expression, that can be used to match strings. RegExp type represents textual patterns and enables matching, searching, and replacing operations on strings.
-   - Date type represents dates and times and supports redimentary date arithmetic
-   - functions and classes are not just part of the language syntax: they are values that can be manipulated by Javacript Programs
-   - functions and classes are a specalized kind of object
-
 3. Memory Management
 
 - the javascript interpreter performs automatic garbage collection for memory management
@@ -48,13 +42,14 @@
 - the interpreter will garbage collect when a porgram no longer has any way to refer to a variable.
 - the interpreter will then reclaim the RAM memory it was occupying
 
-2. OOP
+2. Object Orientation in JavaScript
 
-- globally define functions are not needed when using OOP, meaning there are types that have defined methods for working with certain values
-- to sort the elements of an array a for example we dont pass a to a sort function. Instead we invoke the sort method of a
+- The best part of OOP is the fact that globally defined functions become a thing of the past.
+- Therefore you utilizes types that have defined methods for working with certain values.
+- For example to sort the elements of an array a for example we don't pass a to a sort function, instead we invoke the sort method of a...
 
-        array a = []
-        a.sort
+        let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        a.sort();
 
 - numbers, strings, booleans, and symbols have methods attached to them that can be invoked
 - object types are mutable
