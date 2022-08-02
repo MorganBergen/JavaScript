@@ -33,15 +33,14 @@ ${exception.message}
 
 /*
 tagged template literals
-- tagged template literals are a new feature in ES6.
-- They are a way to use string literals to include expressions in the string.
-- They are similar to template literals, but they use a tag to indicate where the expression should be inserted.
-- The tag is a string literal that is surrounded by curly braces.
-- The tag is used to identify the location in the string where the expression should be inserted.
-- The tag can be any string, but it is common to use a variable name.
-- The tag can be used multiple times in the string.
-- The tag can be used to insert an expression into the string.
-- tagged templates are commonly used to apply HTML or SQL escaping to the values before substituting them into text.
+Tagged template literals are a new feature in ES6.  They are a way to use string literals to include expressions in the string.  They're similar to template literals, but they use a tag to indicate where the expression should be inserted.  The tag can be any string, but it is common to use a variable name  Tagged templates are commonly used to apply HTML or SQL escaping to the values before substituting them into text.
+
+
+
+
+Note that even though the tag portion of a tagged template literal is a function, there are no parentheses around it in its invocation.  This is a very specific case, the backtick characters replace the open and close parentheses.
+
+The ability to define your own template tag functions is powerful feature in JavaScript.
 */
 
 
@@ -61,7 +60,6 @@ The ability to define your own template tag functions is powerful feature in Jav
 */
 
 let name = "Morgan";
-
 // thus this will not work, because () is not allowed in a tagged template literal
 // () is replaced instead with ``
 console.log(`String.raw(name)`, "TypeError: Cannot convert undefined or null to object");
@@ -75,27 +73,17 @@ console.log(String.raw`Morgan` == String.raw`${name}`); // ==> true
 
 /*
 Pattern Matching
-JavaScript deifne a datatype known as a regaular expression === RegExp
-RegExp is for describing and matching patterns in strings of text.
-RegExp is a special type of object and has methods like numbers and strings.
-RegExp's syntax is complex and can be hard to understand, so more indepth details will be provided later in this repo.
-However here is a brief overview of the RegExp syntax:
+JavaScript deifne a datatype known as a regaular expression === RegExp  RegExp is for describing and matching patterns in strings of text.  RegExp is a special type of object and has methods like numbers and strings.  The syntax is complex and can be hard to understand, so more indepth details will be provided later in this repo.  However here is a brief overview of the RegExp syntax:
 */
 
 // text between a pair of slashes constitutes a regular expression literal
 // the second slash in the pair can also be followed by one or more letters, which modifies the meaning of the pattern.
 // for example
-let re = /ab+c/;
-console.log(re);
-
-function RegularExpression() {
-    /^HTML/;            // matches the string "HTML" at the start of a string
-    /[1-9][0-9]*/;      // match a nonzero digit, followed by any $ digits
-    /\bjavascript\b/i;  // match "javascript" as a word, case-insensitive
-}
 
 
-RegularExpression();
+/^HTML/;            // matches the string "HTML" at the start of a string
+/[1-9][0-9]*/;      // match a nonzero digit, followed by any $ digits
+/\bjavascript\b/i;  // match "javascript" as a word, case-insensitive
 
 /*
 RegExp objects define a number of useful methods and strings also have methods that accept RegExp arguments.
@@ -104,12 +92,12 @@ RegExp objects define a number of useful methods and strings also have methods t
 let text = "testing: 1, 2, 3";
 let pattern = /\d+/g;
 
-console.log(pattern.test(text));
-console.log(text.search(pattern));
-console.log(text.match(pattern));
-console.log(text.replace(pattern, "@"));
-console.log(text.split(/\D+/));
-console.log(`\n\n`);
+console.log(pattern.test(text)); // => true
+console.log(text.search(pattern)); // => 5: the first match is at index 5
+console.log(text.match(pattern)); // => ["1", "2", "3"]: the first match is at index 5
+console.log(text.replace(pattern, "@")); // => "testing: @, @, @": the first match is at index 5
+console.log(text.split(/\D+/)); // => ["testing", "1", "2", "3"]: the first match is at index 5
+console.log(`\n\n`); // => "0  1  2  3  4  5  6  7  8  9  ": the first match is at index 5
 
 // template literals can hold expressions and convert them to strings
 console.log(`${true + false === true}`)

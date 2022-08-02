@@ -359,13 +359,12 @@
         let template_message = `Hello ${name} how are you?`;
         console.log(template_message)   // ==> Hello Khaled how are you?
 
-- Template literals can hold expressions and convert them to strings
+Template literals can hold expressions and convert them to strings
 
         console.log(`${true + false === true}`)
 
-Even functions can be inserted into template literals
+Even `functions()` can be inserted into template literals
 
-        // even functions can be inserted into template literals
         function looping(size) {
             let output = "";
             for (let i = 0; i < size; i++) {
@@ -375,3 +374,46 @@ Even functions can be inserted into template literals
         }
 
         console.log(`${looping(10)}`); // => "0 1 2 3 4 5 6 7 8 9 "
+
+8.  Tagged Template Literals
+    Tagged template literals are a new feature in ES6. They are a way to use string literals to include expressions in the string. They're similar to template literals, but they use a tag to indicate where the expression should be inserted. The tag can be any string, but it is common to use a variable name Tagged templates are commonly used to apply HTML or SQL escaping to the values before substituting them into text.
+
+        // The built-in function String.raw() returns the text within backticks without any processing of backslash escapes:
+        console.log(`\n`.length); // => 1: the string has a single newline character
+        console.log(String.raw`\n`.length); // => 2: a backslash charactre and the letter n
+        console.log(String.raw`\n`); // => "\n": the string will output the letter n
+        console.log(String.raw`morgan bergen`); // => "morgan bergen": the string will output the word "morgan
+
+The ability to define your own template tag functions is powerful feature in JavaScript.
+
+> :warning: **NOTE REGARDING SYNTAX**: Even though the tag portion of the tagged template literal `String.raw` is a function, there is no parenthese around it in its invocation. This is a very specific case, the backtick characters replace the open and close parentheses.
+
+        let name = "Morgan";
+        // thus this will not work, because () is not allowed in a tagged template literal
+        // () is replaced instead with ``
+        console.log(`String.raw(name)`, "TypeError: Cannot convert undefined or null to object");
+        // however this works, if you want to insert as a variable
+        console.log(String.raw`${name}`);
+        // as well as this if you want to insert a simple string literal
+        console.log(String.raw`Morgan`);
+        //therefore this is the correct way to use a tagged template literal
+        console.log(String.raw`Morgan` == String.raw`${name}`); // ==> true
+
+9.  Pattern Matching
+    JavaScript deifne a datatype known as a regaular expression === RegExp RegExp is for describing and matching patterns in strings of text. RegExp is a special type of object and has methods like numbers and strings. The syntax is complex and can be hard to understand, so more indepth details will be provided later in this repo. However here is a brief overview of the RegExp syntax:
+
+        /^HTML/;            // matches the string "HTML" at the start of a string
+        /[1-9][0-9]*/;      // match a nonzero digit, followed by any $ digits
+        /\bjavascript\b/i;  // match "javascript" as a word, case-insensitive
+
+RegExp objects define a number of useful methods and strings also have methods that accept RegExp arguments.
+
+        let text = "testing: 1, 2, 3";
+        let pattern = /\d+/g;
+
+        console.log(pattern.test(text)); // => true
+        console.log(text.search(pattern)); // => 5: the first match is at index 5
+        console.log(text.match(pattern)); // => ["1", "2", "3"]: the first match is at index 5
+        console.log(text.replace(pattern, "@")); // => "testing: @, @, @": the first match is at index 5
+        console.log(text.split(/\D+/)); // => ["testing", "1", "2", "3"]: the first match is at index 5
+        console.log(`\n\n`); // => "0  1  2  3  4  5  6  7  8  9  ": the first match is at index 5
