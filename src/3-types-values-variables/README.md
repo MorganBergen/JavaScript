@@ -337,14 +337,16 @@
 - bracket notation equivalence
   Strings can also be treated like read-only arrays, whereby you can access individual characters of a string using the bracket notation instead of the dot notation.
 
-            let str = "chemistry";
-            str.charAt(0); // => "c"
-            str[0]; // => "c"
-            (str.charAt(0) === str[0]); // => true
-
-            str.charAt(str.length - 1); // => "y"
-            str[str.length - 1]; // => "y"
-            (str.charAt(str.length - 1) === str[str.length - 1]); // => true
+        let str = "chemistry";
+        str.charAt(0); // => "c"
+        str[0]; // => "c"
+        (str.charAt(0) === str[0]); // => true
+        str.charAt(str.length - 1); // => "y"
+        str[str.length - 1]; // => "y"
+        (str.charAt(str.length - 1) === str[str.length - 1]); // => true
 
 - remember that string are immutable in javascript. Thus, methods such as replace() andtoUpperCase() return a new string.
 - There are no methods that modify the original string on which they are invoked.
+
+7.  Template Literals
+    In [ES6](https://en.wikipedia.org/wiki/ECMAScript) and later, string literals can be delimited with backticks.

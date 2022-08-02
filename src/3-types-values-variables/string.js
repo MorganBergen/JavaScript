@@ -219,3 +219,23 @@ str[str.length - 1]; // => "y"
 
 
 /*
+template literals
+- In [ES6](https://en.wikipedia.org/wiki/ECMAScript) and later, string literals can be delimited with backticks.
+*/
+
+let s = 'hello world';
+
+/*
+This is more than just another string literal syntax, it is a template literal which can include arbitrary expressions.
+The final value of a string literal in backticks is computed by evaluating any included expressions, converting the values of those expressions to strings and combing those computed strings with the literal characters within the backticks.
+
+Everything between the ${ name } is interpreted as an expression and everything outside is interpreted as literal characters.
+The expression is evaluated and the result is converted to a string, and inserted into the template, replacing the dollar sign, the curly braces, and everything in between them.
+
+
+
+*/
+
+let man = "Khaled";
+let hello = `Hello ${man}.`; // hello == "Hello Khaled"
+console.log(hello);
