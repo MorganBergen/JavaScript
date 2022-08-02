@@ -350,3 +350,28 @@
 
 7.  Template Literals
     In [ES6](https://en.wikipedia.org/wiki/ECMAScript) and later, string literals can be delimited with backticks.
+    This is more than just another string literal syntax, it is a template literal which can include arbitrary expressions.
+    The final value of a string literal in backticks is computed by evaluating any included expressions, converting the values of those expressions to strings and combing those computed strings with the literal characters within the backticks.
+    Everything between the ${ name } is interpreted as an expression and everything outside is interpreted as literal characters of type string.
+    The expression is evaluated and the result is converted to a string, and inserted into the template, replacing the dollar sign, the curly braces, and everything in between them.
+
+        let string_name = "Khaled";
+        let template_message = `Hello ${name} how are you?`;
+        console.log(template_message)   // ==> Hello Khaled how are you?
+
+- Template literals can hold expressions and convert them to strings
+
+        console.log(`${true + false === true}`)
+
+Even functions can be inserted into template literals
+
+        // even functions can be inserted into template literals
+        function looping(size) {
+            let output = "";
+            for (let i = 0; i < size; i++) {
+                output += `${i}  `;
+            }
+            return (output);
+        }
+
+        console.log(`${looping(10)}`); // => "0 1 2 3 4 5 6 7 8 9 "
