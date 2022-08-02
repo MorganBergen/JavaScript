@@ -417,3 +417,75 @@ RegExp objects define a number of useful methods and strings also have methods t
         console.log(text.replace(pattern, "@")); // => "testing: @, @, @": the first match is at index 5
         console.log(text.split(/\D+/)); // => ["testing", "1", "2", "3"]: the first match is at index 5
         console.log(`\n\n`); // => "0  1  2  3  4  5  6  7  8  9  ": the first match is at index 5
+
+## Boolean Values
+
+Booleans are reserved by lowercase true and false.
+0 === false;
+1 === true;
+
+Booleans primarily serve to indicate the state of something, specifally the state of a condition. Therefore the primitive data type booleans are utilized in for control structures in most programs.
+
+        if (true !== false) {
+            console.log("condition is true");
+        } else {
+            console.log("condition is false");
+        } // => "condition is true"
+
+Any JavaScript value can be converted to a boolean. Objects and arrays convert and work like true.
+
+        if (undefined === false ||
+            null === false ||
+            0 === false ||
+            "" === false ||
+            NaN === false ||
+            " " === false ||
+            "0" === false ||
+            "false" === false ||
+            false === false) {
+            console.log("All of these values are considered false");
+        }
+
+1. Falsy Values
+
+- undefined
+- null
+- 0
+- ""
+- NaN
+- " "
+- "0"
+- "false"
+- false
+
+2. Truthy Values
+
+- any non-falsey value
+- arrays with at least one element
+- objects with at least one property
+
+3.  Implict vs Explicit conversion for booleans
+
+        o = null;
+
+        if (o !== null) {
+            console.log("explicitly checking for null is more restrictive, but less simplistic");
+        }
+
+        if (o) {
+            console.log("implicitly checking for null is less restrictive, but more simplistic");
+        }
+
+4.  Boolean Operators
+
+- && (and)
+- || (or)
+- ! (not)
+
+        let x = 0;
+        let y = 0;
+        let z = 1;
+
+        if ((x === 0 && y === 0) || !(z === 0)) {
+            console.log(`x is ${x} and y is ${y}`);
+        }
