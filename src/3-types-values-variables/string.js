@@ -239,3 +239,7 @@ The expression is evaluated and the result is converted to a string, and inserte
 let man = "Khaled";
 let hello = `Hello ${man}.`; // hello == "Hello Khaled"
 console.log(hello);
+
+
+let errorMessage = `\
+\u
