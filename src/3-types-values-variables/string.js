@@ -195,8 +195,27 @@ me.padEnd(10, "-"); // => "Morgan": add dashes on the right to a length of 3
 // miscellenaous string methods
 me.repeat(3, "#"); // => "#####Morgan#####": repeat the string 3 times
 me.concat("!"); // => "Morgan Bergen!"
+console.log("concat".concat(" will this work")); // => "concat will this work"
 
 
+/*
+- remember that strinsg are immutable in javascript.
+- methods such as replace() andtoUpperCase() return a new string.
+- there are no methods that modify the original string on which they are invoked.
+- strings can also be treated like read-only arrays.
+- you can access individual characters of a string using the bracket notation instead of the dot notation.
+*/
+
+// charAt() method in [] notation
+
+let str = "chemistry";
+str.charAt(0); // => "c"
+str[0]; // => "c"
+(str.charAt(0) === str[0]); // => true
+
+str.charAt(str.length - 1); // => "y"
+str[str.length - 1]; // => "y"
+(str.charAt(str.length - 1) === str[str.length - 1]); // => true
 
 
-
+/*

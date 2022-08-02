@@ -285,6 +285,7 @@
 
 - substring, slice, split
 
+        let me = "Morgan Bergen";
         me.substring(1, 4); // => "org"
         me.slice(1, 4); // => "org" same as substring
         me.slice(-3); // => "erg" last three characters
@@ -294,6 +295,7 @@
 
 - string search
 
+        let me = "Morgan Bergen";
         me.indexOf("Morgan"); // => 0 position of the first occurrence of the substring
         me.indexOf("M", 3); // => 3rd position of the first occurrence of the substring
         me.indexOf("zz"); // => -1: zz does not include in the string
@@ -301,6 +303,7 @@
 
 - boolean searching fucntions
 
+        let me = "Morgan Bergen";
         me.includes("Morgan"); // => true
         me.startsWith("B"); // => false
         me.endsWith("en"); // => true
@@ -309,6 +312,7 @@
 
 - creating modified versions of strings
 
+        let me = "Morgan Bergen";
         me.replace("Morgan", "David") // => "David Bergen"
         me.toLowerCase(); // => "morgan bergen"
         me.toUpperCase(); // => "MORGAN BERGEN"
@@ -317,7 +321,30 @@
 
 - inspecting individual characters of strings
 
+        let me = "Morgan Bergen";
         me.charAt(0); // => "M"
         me.charAt(me.length - 1); // => "n"
         me.charCodeAt(0); // => 77: ASCII code for M
         me.charCodeAt(me.length - 1); // => 110: ASCII code for n
+
+- miscellaneous string methods
+
+        let me = "Morgan Bergen";
+        me.repeat(3, "#"); // => "#####Morgan#####": repeat the string 3 times
+        me.concat("!"); // => "Morgan Bergen!"
+        "concat".concat(" will this work")); // => "concat will this work"
+
+- bracket notation equivalence
+  Strings can also be treated like read-only arrays, whereby you can access individual characters of a string using the bracket notation instead of the dot notation.
+
+            let str = "chemistry";
+            str.charAt(0); // => "c"
+            str[0]; // => "c"
+            (str.charAt(0) === str[0]); // => true
+
+            str.charAt(str.length - 1); // => "y"
+            str[str.length - 1]; // => "y"
+            (str.charAt(str.length - 1) === str[str.length - 1]); // => true
+
+- remember that string are immutable in javascript. Thus, methods such as replace() andtoUpperCase() return a new string.
+- There are no methods that modify the original string on which they are invoked.
