@@ -39,6 +39,47 @@ let n = {};
 console.log(m === n); // false
 
 /*
-Assiging an object to a variable simply assigns the reference:  it does not create a new copy of the object.  If you want to make a new copy of an object or array 
+Assiging an object to a variable simply assigns the reference:  it does not create a new copy of the object.  If you want to make a new copy of an object or array.
 */
 
+let orig = ["a", "b", "c"];
+let final = [];
+
+for (let i = 0; i < orig.length; i++) {
+    final[i] = orig[i];
+}
+
+console.log(final); // ["a", "b", "c"]
+let c = Array.from(orig);  // In ES6, you can copy arrays with Array.from()
+
+// what would be the difference between copying via assignment through iterating and coping via = operator?
+// deep copy versus shallow copy?
+let fish = ["angel", "clown", "mandarin", "sturgeon"];
+let newFish = []
+
+newFish = fish;
+console.log(newFish); // ["angel", "clown", "mandarin", "sturgeon"]
+
+
+/*
+If you want to compare two distinct objects or arrays, you must compare their properties or elements.
+*/
+
+
+function equality(a, b) {
+    if (a === b) {
+        return (true);
+    } if (a.length !== b.length) {
+        return (false);
+    } else {
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] !== b[i]) {
+                return (false);
+            }
+        }
+        return (true);
+    }
+}
+
+
+equality(["a", "b", "c"], ["a", "b", "c"]); // true
