@@ -1,4 +1,5 @@
 /*
+
 immutable primitive values and mutable object references
 
 primitive values are immutable: there is no way to alter their value.
@@ -19,10 +20,13 @@ a[3] = 4;           // mutate the array by adding a new element at index 3
 Objects are not compared by value, two distinct object are not equal even if they have the exact same properties and values. 
 */
 
-let x = [1, 2, 3];
-let y = [1, 2, 3];
-console.log(x === y); // false
-console.log(x[0] === y[0]); // true
+function main() {
+    let x = [1, 2, 3];
+    let y = [1, 2, 3];
+    console.log(x === y); // false
+    console.log(x[0] === y[0]); // true
+}
+
 
 let i = { x: 1 };
 let j = { x: 1 };
@@ -83,3 +87,12 @@ function equality(a, b) {
 
 
 equality(["a", "b", "c"], ["a", "b", "c"]); // true
+
+
+
+/*
+here is an example of a template literal:
+*/
+
+let s = "word";
+console.log(`Hello, ${s}!`); // Hello, word!

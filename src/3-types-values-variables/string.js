@@ -1,7 +1,4 @@
-
-
 /* 
-
 Strings
 
     > A string is an immutable ordered sequence of 16 - bit values, each of whcih typically represents a unicode character.
@@ -9,7 +6,6 @@ Strings
 - the length of a string is a number of 16 - bit values it contains
 - strings and arrays do zero base indexing
 - strings are iterable
-
 */
 
 // UTF-16:
@@ -216,5 +212,28 @@ str[0]; // => "c"
 str.charAt(str.length - 1); // => "y"
 str[str.length - 1]; // => "y"
 (str.charAt(str.length - 1) === str[str.length - 1]); // => true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
